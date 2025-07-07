@@ -5,15 +5,15 @@ import Back1 from '../components/Back1'
 
 
 export default function Index() {
-  const [imageURL, setImageURL] = useState(null)
+  const [imageURL, setImageURL] = useState(null);
 
   const subirImagenyPasaradisenio3d = (e) => {
-    const file = e.target.files?.[0]
+    const file = e.target.files?.[0];
     if (file) {
-      const url = URL.createObjectURL(file)
-      setImageURL(url)
-    }
-  }
+      const url = URL.createObjectURL(file);
+      setImageURL(url);
+    };
+  };
 
   return (
     <div className="h-[100vh] w-[100vw]">
@@ -45,4 +45,4 @@ export default function Index() {
       </Canvas>
     </div>
   );
-}; //peso total 167.898.18 
+}; 
